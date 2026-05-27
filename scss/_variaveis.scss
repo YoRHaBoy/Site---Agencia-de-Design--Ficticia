@@ -1,0 +1,39 @@
+// =========================================================
+// VARIÁVEIS DE DESIGN — cores, fontes, espaçamentos e tamanhos
+// =========================================================
+
+// Cores
+$cor-fundo:         #0f1020;
+$cor-fundo-alt:     #15172b;
+$cor-fundo-escuro:  #0a0b18;
+$cor-texto:         #1a1a2e;
+$cor-texto-claro:   #f5f5f7;
+$cor-muted:         #6b7280;
+$cor-primaria:      #6c5ce7;
+$cor-primaria-2:    #00d2ff;
+$cor-acento:        #ff6b6b;
+$cor-borda:         #ececf3;
+$cor-borda-suave:   #e3e3ec;
+
+// Gradiente
+$gradiente: linear-gradient(135deg, $cor-primaria 0%, $cor-primaria-2 100%);
+
+// Tipografia
+$fonte-base:    'Inter', system-ui, sans-serif;
+$fonte-titulo:  'Poppins', sans-serif;
+$tamanho-base:  1rem;
+
+// Espaçamentos
+$espacamento:        2rem;
+$espacamento-secao:  5rem;
+$espacamento-pequeno: 1rem;
+
+// Estrutura
+$raio:       0.75rem;
+$sombra:     0 10px 30px rgba(20, 20, 50, 0.12);
+$container:  75rem; // 1200px
+
+// Breakpoints
+$bp-tablet:   64rem;  // 1024px
+$bp-mobile:   48rem;  // 768px
+$bp-mobile-p: 26rem;  // 416px

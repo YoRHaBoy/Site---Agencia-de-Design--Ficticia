@@ -1,0 +1,39 @@
+// =========================================================
+// MIXINS REUTILIZÁVEIS
+// =========================================================
+@use 'variaveis' as v;
+
+// Espaçamento padrão de seção (usa operador para metade do valor)
+@mixin espacamento-secao($base: v.$espacamento-secao) {
+  padding-top: $base;
+  padding-bottom: $base;
+  margin-bottom: calc(#{$base} / 2);
+}
+
+// Botão básico reutilizável
+@mixin botao-base($bg: v.$gradiente, $cor: #fff) {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border-radius: v.$raio;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  background: $bg;
+  color: $cor;
+  transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+}
+
+// Flex centralizado
+@mixin flex-center($direcao: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direcao;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+// Media query simplificada
+@mixin responsivo($max) {
+  @media (max-width: $max) { @content; }
+}

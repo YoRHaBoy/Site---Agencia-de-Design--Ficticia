@@ -1,0 +1,59 @@
+// =========================================================
+// BASE — reset, tipografia e estilos globais
+// =========================================================
+@use 'variaveis' as v;
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%; // 1rem = 16px
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+/* VARIÁVEIS CSS (mantidas para uso em runtime) */
+:root {
+  --cor-fundo:       #{v.$cor-fundo};
+  --cor-fundo-alt:   #{v.$cor-fundo-alt};
+  --cor-texto:       #{v.$cor-texto};
+  --cor-texto-claro: #{v.$cor-texto-claro};
+  --cor-muted:       #{v.$cor-muted};
+  --cor-primaria:    #{v.$cor-primaria};
+  --cor-primaria-2:  #{v.$cor-primaria-2};
+  --cor-acento:      #{v.$cor-acento};
+  --gradiente:       #{v.$gradiente};
+  --raio:            #{v.$raio};
+  --sombra:          #{v.$sombra};
+  --container:       #{v.$container};
+}
+
+body {
+  font-family: v.$fonte-base;
+  font-size: v.$tamanho-base;
+  line-height: 1.6;
+  color: v.$cor-texto;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  font-family: v.$fonte-titulo;
+  line-height: 1.2;
+  color: v.$cor-texto;
+}

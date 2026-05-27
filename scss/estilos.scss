@@ -1,0 +1,10 @@
+// =========================================================
+// AGÊNCIA CRIATIVA WEB — Arquivo principal SASS
+// Importa todos os partials usando @use
+// =========================================================
+
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
